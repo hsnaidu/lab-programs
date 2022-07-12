@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>dynamic html</title>
+        <style type="text/css">
+            .img1{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 0;
+            }
+            .img2{
+                position: absolute;
+                top: 50px;
+                left:  110px;
+                z-index: 0;
+            }
+            .img3{
+                position: absolute;
+                top: 100px;
+                left: 220px;
+                z-index: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <img src="photos/image1.jpeg" id="i1" class="img1" onclick="toTop('i1')"/>
+            <img src="photos/image2.jpeg" id="i2" class="img2"  onclick="toTop('i2')"/>
+            <img src="photos/image3.jpeg" id="i3" class="img3"  onclick="toTop('i3')"/>
+        </p>
+        <script>
+            var top = "i1";
+            function toTop(newTop){
+                domTop = document.getElementById(top).style;
+                domNew = document.getElementById(newTop).style;
+                domTop.zIndex="0";
+                domNew.zIndex="10";
+                top=newTop;
+            }
+        </script>
+    </body>
+</html>

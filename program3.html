@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>math solution</title>
+    </head>
+    <body>
+        <form action="" name="forms">
+            Enter the Mathematical Expression in the box
+            <br>
+            <table cellpadding="4" height="200 100" >
+                <tr>
+                    <td><b>Input</b> <input type="text" name="expr" id=""></td>
+                    <td><input type="button" name="btn" value="calucate" id="" onclick="calc();"></td>
+                </tr>
+                <tr>
+                    <td><b>result</b> <input type="text" size="20" name="result"></td>
+                    <td><input type="reset" name="reset" value="reset"></td>
+                </tr>
+            </table>
+            
+        </form>
+
+        <script>
+            function calc(){
+                document.forms.result.value = eval(document.forms.expr.value);
+            }
+        </script>
+    </body>
+</html>

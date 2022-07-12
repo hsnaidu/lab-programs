@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> lab program 1</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+             integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <form action="" name="forms">
+
+            First Name<input type="text" placehilder ="username">
+            Last Name<input type="text" placehilder ="lastname">
+            <br>
+            <b>Gender</b><br>
+            MALE <input type="radio" name="MALE" id=""> 
+            FEMALE <input type="radio" name="FEMALE" id="">
+            <br>
+            <b>Education</b><br>
+            UG <input type="checkbox" name="ug" id="">
+            PG <input type="checkbox" name="pg" id="">
+            Graduate <input type="checkbox" name="g" id="">
+            <br>
+            <button onclick="count();">SUBMIT</button>
+        </form>
+
+
+
+        <script>
+            function count(){
+                alert("the number of element in form are " + document.forms.length);
+            }
+        </script>
+    </body>
+</html>
